@@ -20,3 +20,21 @@ or add
 ```
 
 to the require section of your `composer.json` file.
+
+Usage
+-----
+
+```
+use Jeff\simditor\Simditor;
+
+Simditor::widget([
+    'editorOptions' => [
+        'textarea' => '#content',
+    ]
+]);
+
+or
+
+echo $form->field($model, 'content')->widget(Simditor::className());
+
+```
